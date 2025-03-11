@@ -8,7 +8,7 @@ test("has title", async ({ page }) => {
 
   const inputUsername = page.locator("#user-name");
   await inputUsername.fill("standard_user");
-  await expect(inputUsername).toHaveValue("standard_user");
+  await expect(inputUsername).toHaveValue("locked_out_user");
 
   const inputPassword = page.locator("#password");
   await inputPassword.fill("secret_sauce");
