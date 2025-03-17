@@ -16,6 +16,9 @@ test("Login Valid Data", async ({ page }) => {
 
   const buttonLogin = page.locator("#login-button");
   await buttonLogin.click();
+
+  // Login Auth in file Config
+  await page.context().storageState({ path: "auth.json" });
 });
 
 // Login Invalid Username
