@@ -14,7 +14,7 @@ export default class loginActions {
     this.inputPassword = page.locator(this.loginLocator.inputPassword);
     this.clickButtonlogin = page.locator(this.loginLocator.buttonLogin);
 
-    // this.urlValidate = "https://www.saucedemo.com/inventory.html";
+    this.urlValidate = "https://www.saucedemo.com/inventory.html";
     this.addItemchart = page.locator(this.loginLocator.addItemchart);
 
     this.clickchartIcon = page.locator(this.loginLocator.clickchartIcon);
@@ -42,9 +42,9 @@ export default class loginActions {
     await this.clickButtonlogin.click();
   }
 
-  // async gotoChart() {
-  //   await expect(this.page).toHaveURL(this.urlValidate);
-  // }
+  async gotoChart() {
+    await expect(this.page).toHaveURL(this.urlValidate);
+  }
 
   async addItem() {
     await this.addItemchart.click();

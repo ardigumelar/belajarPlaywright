@@ -3,7 +3,7 @@ export default class loginLocator {
   inputPassword = "#password";
   buttonLogin = "#login-button";
 
-  // urlValidate = "https://www.saucedemo.com/inventory.html";
+  urlValidate = "https://www.saucedemo.com/inventory.html";
   addItemchart = "#add-to-cart-sauce-labs-backpack";
 
   clickchartIcon = "#shopping_cart_container";
